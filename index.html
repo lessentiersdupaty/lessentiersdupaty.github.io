@@ -19,12 +19,18 @@
         <!-- Nav -->
         <nav id="nav">
             <ul>
-                <li><a href="#club" class="active">Le Club</a></li>
-                <li><a href="#trainings">Les Entraînements</a></li>
-                <li><a href="#trail">Le Trail Du Paty</a></li>
-                <li><a href="#pictures">Photos</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#club" class="active" data-fr="Le Club" data-en="The Club">Le Club</a></li>
+                <li><a href="#trainings" data-fr="Les Entraînements" data-en="Training">Les Entraînements</a></li>
+                <li><a href="#trail" data-fr="Le Trail Du Paty" data-en="The Paty Trail">Le Trail Du Paty</a></li>
+                <li><a href="#pictures" data-fr="Photos" data-en="Photos">Photos</a></li>
+                <li><a href="#contact" data-fr="Contact" data-en="Contact">Contact</a></li>
             </ul>
+            <label class="lang-switch">
+                <span id="lang-label-fr" class="active">FR</span>
+                <input type="checkbox" id="lang-toggle" />
+                <span class="toggle-track"></span>
+                <span id="lang-label-en">EN</span>
+            </label>
         </nav>
 
         <!-- Main -->
@@ -39,11 +45,11 @@
                         <header class="major special">
                             <h2>Les Sentiers du Paty</h2>
                         </header>
-                        <p>
+                        <p data-fr="Nous sommes une association de course à pied basée à Caromb, dans le Vaucluse." data-en="We are a running club based in Caromb, in the Vaucluse region of Provence.">
                             Nous sommes une association de course à pied basée à
                             Caromb, dans le Vaucluse.
                         </p>
-                        <p>
+                        <p data-fr='Nous organisons chaque année le "Trail des Sentiers du Paty", un événement sportif qui attire de nombreux coureurs de la région et d&apos;ailleurs.' data-en='Every year we organize the "Trail des Sentiers du Paty", a sporting event that attracts many runners from the region and beyond.'>
                             Nous organisons chaque année le "Trail des Sentiers
                             du Paty", un événement sportif qui attire de
                             nombreux coureurs de la région et d'ailleurs.
@@ -53,6 +59,8 @@
                                 <a
                                     href="mailto:lessentiersdupaty@gmail.com"
                                     class="button"
+                                    data-fr="Contactez nous !"
+                                    data-en="Contact us!"
                                     >Contactez nous !</a
                                 >
                             </li>
@@ -67,8 +75,8 @@
             <!-- Trainings Section -->
             <section id="trainings" class="main special">
                 <header class="major">
-                    <h2>Les Entraînements</h2>
-                    <p>
+                    <h2 data-fr="Les Entraînements" data-en="Training Sessions">Les Entraînements</h2>
+                    <p data-fr="Du lundi au jeudi, vous pouvez nous rejoindre pour des entraînements de course à pied sur routes et chemins.&lt;br /&gt;Vous pouvez venir quand ça vous arrange et sélectionnez uniquement certains entrainements.&lt;br /&gt;" data-en="From Monday to Thursday, you can join us for running sessions on roads and trails.&lt;br /&gt;Come whenever it suits you and pick only the sessions you want.&lt;br /&gt;">
                         Du lundi au jeudi, vous pouvez nous rejoindre pour des
                         entraînements de course à pied sur routes et chemins.<br />
                         Vous pouvez venir quand ça vous arrange et sélectionnez
@@ -78,31 +86,31 @@
                 <ul class="statistics">
                     <li class="style5">
                         <span class="icon"></span>
-                        <strong>Lundi</strong>
-                        Sortie 45min / 1h<br />
+                        <strong data-fr="Lundi" data-en="Monday">Lundi</strong>
+                        <span data-fr="Sortie 45min / 1h&lt;br /&gt;Allure lente - Sur routes&lt;br /&gt;Rdv 18h30 au stade" data-en="Run 45min / 1h&lt;br /&gt;Slow pace - On roads&lt;br /&gt;Meet at 6:30pm at the stadium">Sortie 45min / 1h<br />
                         Allure lente - Sur routes<br />
-                        Rdv 18h30 au stade
+                        Rdv 18h30 au stade</span>
                     </li>
                     <li class="style2">
                         <span class="icon"></span>
-                        <strong>Mardi</strong>
-                        Sortie 1h / 1h15<br />
-                        Allure moyenne - Sur routes & chemins<br />
-                        Rdv 18h30 au stade
+                        <strong data-fr="Mardi" data-en="Tuesday">Mardi</strong>
+                        <span data-fr="Sortie 1h / 1h15&lt;br /&gt;Allure moyenne - Sur routes &amp; chemins&lt;br /&gt;Rdv 18h30 au stade" data-en="Run 1h / 1h15&lt;br /&gt;Medium pace - On roads &amp; trails&lt;br /&gt;Meet at 6:30pm at the stadium">Sortie 1h / 1h15<br />
+                        Allure moyenne - Sur routes &amp; chemins<br />
+                        Rdv 18h30 au stade</span>
                     </li>
                     <li class="style3">
                         <span class="icon"></span>
-                        <strong>Mercredi</strong>
-                        Sortie 1h / 1h15<br />
+                        <strong data-fr="Mercredi" data-en="Wednesday">Mercredi</strong>
+                        <span data-fr="Sortie 1h / 1h15&lt;br /&gt;Entraînement spécifique - Fractionnées, montées, etc.&lt;br /&gt;Rdv 18h30 au stade" data-en="Run 1h / 1h15&lt;br /&gt;Specific training - Intervals, hill repeats, etc.&lt;br /&gt;Meet at 6:30pm at the stadium">Sortie 1h / 1h15<br />
                         Entraînement spécifique - Fractionnées, montées, etc.<br />
-                        Rdv 18h30 au stade
+                        Rdv 18h30 au stade</span>
                     </li>
                     <li class="style1">
                         <span class="icon"></span>
-                        <strong>Jeudi</strong>
-                        Sortie 1h / 1h30<br />
+                        <strong data-fr="Jeudi" data-en="Thursday">Jeudi</strong>
+                        <span data-fr="Sortie 1h / 1h30&lt;br /&gt;Trail allure moyenne - Sur chemins&lt;br /&gt;Rdv 18h30 au parking de l'école primaire" data-en="Run 1h / 1h30&lt;br /&gt;Trail at medium pace - On trails&lt;br /&gt;Meet at 6:30pm at the primary school parking">Sortie 1h / 1h30<br />
                         Trail allure moyenne - Sur chemins<br />
-                        Rdv 18h30 au parking de l'école primaire
+                        Rdv 18h30 au parking de l'école primaire</span>
                     </li>
                 </ul>
             </section>
@@ -110,14 +118,14 @@
             <!-- Trail Section -->
             <section id="trail" class="main special">
                 <header class="major">
-                    <h2>Le Trail du Paty</h2>
+                    <h2 data-fr="Le Trail du Paty" data-en="The Paty Trail">Le Trail du Paty</h2>
                 </header>
                 <img
                     src="images/affiche-trail-2026.jpg"
                     class="image trail"
                     alt=""
                 />
-                <p>
+                <p data-fr="Entre le Mont Ventoux et les Dentelles de Montmirail venez chausser vos baskets et découvrir la colline du Paty, la Pré Fantasti, la chapelle du Paty, le sentier du petit patrimoine rural avec ses bories et ses murs de restanques, puis pour le 25 km les trois termes, la grange rouge, le gros pata et le torrent de Pié blanc." data-en="Between Mont Ventoux and the Dentelles de Montmirail, come lace up your running shoes and discover the Paty hill, the Pré Fantasti, the Paty chapel, the rural heritage trail with its bories and restanque walls, then for the 25 km race the Trois Termes, the Grange Rouge, the Gros Pata and the Pié Blanc torrent.">
                     Entre le Mont Ventoux et les Dentelles de Montmirail venez
                     chausser vos baskets et découvrir la colline du Paty, la Pré
                     Fantasti, la chapelle du Paty, le sentier du petit
@@ -127,37 +135,39 @@
                 </p>
                 <ul class="features">
                     <li>
-                        <h3>Le 7 kms - 250m D+</h3>
-                        <p>
+                        <h3 data-fr="Le 7 kms - 250m D+" data-en="The 7 km - 250m elevation">Le 7 kms - 250m D+</h3>
+                        <p data-fr="Un tracé assez court avec 250 mètres de dénivelé positif, idéal pour les débutants." data-en="A fairly short course with 250 meters of elevation gain, ideal for beginners.">
                             Un tracé assez court avec 250 mètres de dénivelé
                             positif, idéal pour les débutants.
                         </p>
-                        <a href="gpx/7_km_plagnol.gpx" download class="button small">Télécharger le GPX</a>
+                        <a href="gpx/7_km_plagnol.gpx" download class="button small" data-fr="Télécharger le GPX" data-en="Download GPX">Télécharger le GPX</a>
                     </li>
                     <li>
-                        <h3>Le 13 kms - 450m D+</h3>
-                        <p>
+                        <h3 data-fr="Le 13 kms - 450m D+" data-en="The 13 km - 450m elevation">Le 13 kms - 450m D+</h3>
+                        <p data-fr="Une course intermédiaire avec 450 mètres de dénivelé positif." data-en="An intermediate race with 450 meters of elevation gain.">
                             Une course intermédiaire avec 450 mètres de dénivelé
                             positif.
                         </p>
-                        <a href="gpx/13_km_plagnol.gpx" download class="button small">Télécharger le GPX</a>
+                        <a href="gpx/13_km_plagnol.gpx" download class="button small" data-fr="Télécharger le GPX" data-en="Download GPX">Télécharger le GPX</a>
                     </li>
                     <li>
-                        <h3>Le 25 kms - 1000m D+</h3>
-                        <p>
+                        <h3 data-fr="Le 25 kms - 1000m D+" data-en="The 25 km - 1000m elevation">Le 25 kms - 1000m D+</h3>
+                        <p data-fr="Un parcours exigeant et technique avec un dénivelé positif de 1000 mètres." data-en="A demanding and technical course with 1000 meters of elevation gain.">
                             Un parcours exigeant et technique avec un dénivelé
                             positif de 1000 mètres.
                         </p>
-                        <a href="gpx/25_km_plagnol.gpx" download class="button small">Télécharger le GPX</a>
+                        <a href="gpx/25_km_plagnol.gpx" download class="button small" data-fr="Télécharger le GPX" data-en="Download GPX">Télécharger le GPX</a>
                     </li>
                 </ul>
-                <p>Il y aura aussi une course adaptée aux enfants !</p>
+                <p data-fr="Il y aura aussi une course adaptée aux enfants !" data-en="There will also be a race for kids!">Il y aura aussi une course adaptée aux enfants !</p>
                 <footer class="major">
                     <ul class="actions special">
                         <li>
                             <a
                                 href="https://kms.fr/v5/public/courses/5263"
                                 class="button primary"
+                                data-fr="S'inscrire !"
+                                data-en="Register!"
                                 >S'inscrire !</a
                             >
                         </li>
@@ -168,8 +178,8 @@
             <!-- Pictures Section -->
             <section id="pictures" class="main special">
                 <header class="major">
-                    <h2>Quelques Photos</h2>
-                    <p>
+                    <h2 data-fr="Quelques Photos" data-en="Some Photos">Quelques Photos</h2>
+                    <p data-fr="Voici quelques photos de nos entrainements et nos participations à diverses courses !" data-en="Here are some photos from our training sessions and our participations in various races!">
                         Voici quelques photos de nos entrainements et nos
                         participations à diverses courses !
                     </p>
@@ -252,8 +262,8 @@
             <!-- Contact Section -->
             <section id="contact" class="main special">
                 <header class="major">
-                    <h2>Contactez nous</h2>
-                    <p>
+                    <h2 data-fr="Contactez nous" data-en="Contact Us">Contactez nous</h2>
+                    <p data-fr="N’hésitez pas à nous contacter, peu importe la raison !&lt;br /&gt;Nous serons heureux de vous répondre !" data-en="Don’t hesitate to contact us, for any reason!&lt;br /&gt;We’ll be happy to get back to you!">
                         N’hésitez pas à nous contacter, peu importe la raison !<br />
                         Nous serons heureux de vous répondre !
                     </p>
@@ -262,6 +272,8 @@
                     <ul class="actions special">
                         <li>
                             <a href="mailto:lessentiersdupaty@gmail.com" class="button primary"
+                                data-fr="Nous envoyer un email"
+                                data-en="Send us an email"
                                 >Nous envoyer un email</a
                             >
                         </li>
@@ -273,13 +285,13 @@
         <!-- Footer -->
         <footer id="footer">
             <section>
-                <h2>Adhérer au club</h2>
-                <p>
+                <h2 data-fr="Adhérer au club" data-en="Join the Club">Adhérer au club</h2>
+                <p data-fr="Si l'idée de nous rejoindre pour partager un moment de course à pied vous tente, n'hésitez pas à nous contacter ou directement venir à un de nos entrainements !" data-en="If you'd like to join us for a run, don't hesitate to contact us or just come to one of our training sessions!">
                     Si l'idée de nous rejoindre pour partager un moment de
                     course à pied vous tente, n'hésitez pas à nous contacter ou
                     directement venir à un de nos entrainements !
                 </p>
-                <p style="margin: 0 0 1em 0">
+                <p style="margin: 0 0 1em 0" data-fr="Si vous souhaitez régler votre cotisation 2025/2026, voici le lien :" data-en="If you'd like to pay your 2025/2026 membership fee, here is the link:">
                     Si vous souhaitez régler votre cotisation 2025/2026, voici
                     le lien :
                 </p>
@@ -288,6 +300,8 @@
                         <a
                             href="https://www.helloasso.com/associations/les-sentiers-du-paty/adhesions/adhesions-2025"
                             class="button"
+                            data-fr="Payer sur HelloAsso"
+                            data-en="Pay on HelloAsso"
                             >Payer sur HelloAsso</a
                         >
                     </li>
@@ -296,7 +310,7 @@
             <section class="infos">
                 <h2>Association "Les Sentiers du Paty"</h2>
                 <dl class="alt">
-                    <dt>Adresse</dt>
+                    <dt data-fr="Adresse" data-en="Address">Adresse</dt>
                     <dd>84330 Caromb &bull; France</dd>
                     <dt>Email</dt>
                     <dd>
@@ -335,6 +349,7 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/lang.js"></script>
         <!-- Include Fancybox -->
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
         <script>

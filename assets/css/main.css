@@ -3450,6 +3450,102 @@ body.is-preload #header.alt .logo {
     }
 }
 
+/* Language Toggle */
+
+.lang-switch {
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0.4em;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #636363;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.lang-switch span {
+    opacity: 0.45;
+    -moz-transition: opacity 0.2s ease;
+    -webkit-transition: opacity 0.2s ease;
+    -ms-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
+}
+
+.lang-switch span.active {
+    opacity: 1;
+}
+
+.lang-switch .toggle-track {
+    position: relative;
+    width: 2.2em;
+    height: 1.2em;
+    background: #ddd;
+    border-radius: 0.6em;
+    cursor: pointer;
+    -moz-transition: background 0.2s ease;
+    -webkit-transition: background 0.2s ease;
+    -ms-transition: background 0.2s ease;
+    transition: background 0.2s ease;
+}
+
+.lang-switch .toggle-track::after {
+    content: "";
+    position: absolute;
+    top: 0.15em;
+    left: 0.15em;
+    width: 0.9em;
+    height: 0.9em;
+    background: #fff;
+    border-radius: 50%;
+    -moz-transition: transform 0.2s ease;
+    -webkit-transition: -webkit-transform 0.2s ease;
+    -ms-transition: transform 0.2s ease;
+    transition: transform 0.2s ease;
+}
+
+.lang-switch input:checked + .toggle-track {
+    background: #8cc2e6;
+}
+
+.lang-switch input:checked + .toggle-track::after {
+    -webkit-transform: translateX(1em);
+    -ms-transform: translateX(1em);
+    transform: translateX(1em);
+}
+
+.lang-switch input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+@media screen and (max-width: 736px) {
+    .lang-switch {
+        position: fixed;
+        top: 0.6em;
+        right: 0.6em;
+        z-index: 100;
+        background: rgba(247, 247, 247, 0.95);
+        padding: 0.4em 0.6em;
+        border-radius: 0.5em;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    }
+}
+
 /* Main */
 
 #main {
