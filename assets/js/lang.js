@@ -6,10 +6,11 @@
         var els = document.querySelectorAll("[data-en]");
         for (var i = 0; i < els.length; i++) {
             var el = els[i];
-            if (lang === "en") {
-                el.innerHTML = el.getAttribute("data-en");
+            var value = lang === "en" ? el.getAttribute("data-en") : el.getAttribute("data-fr");
+            if (el.tagName === "META") {
+                el.setAttribute("content", value);
             } else {
-                el.innerHTML = el.getAttribute("data-fr");
+                el.innerHTML = value;
             }
         }
         var toggle = document.getElementById("lang-toggle");
